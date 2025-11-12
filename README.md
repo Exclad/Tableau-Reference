@@ -181,3 +181,72 @@ View, Filter, View Comment, Add Comment, Download Image/PDF, Download Summary Da
 
 ![Workbooks Level: With Run Explain Data permission](https://github.com/user-attachments/assets/f69e5c0e-861f-42aa-8e6d-d34eb5967bfb)
 
+#### Overwrite
+
+Refer to Overwrite in Data Sources-level Permission
+
+#### Create/ Refresh Metrics (RETIRED)
+
+References: https://help.tableau.com/current/online/en-us/metrics_create.htm
+
+https://help.tableau.com/current/online/en-us/metrics_admin.htm
+
+#### Move
+
+Refer to Move in Data Sources-level Permission
+
+#### Delete
+
+Refer to Delete in Data Sources-level Permission
+
+#### Set Permission
+
+Refer to Set Permission in Data Sources-level Permission
+
+### Virtual Connection Permission
+#### Overview
+
+Virtual Connections basically act as a datasource. Their permissions are: 
+View, Connect, Overwrite, Move, Delete and Set Permissions.
+
+![Virtual Connection permission types](https://github.com/user-attachments/assets/989f29f3-67f0-4a0e-928f-3dcda10fc20c)
+
+#### View
+**Without View**: User cannot see the Virtual Connection.
+
+**With View**: User can see the Virtual Connection.
+
+![Virtual Connection View permission](https://github.com/user-attachments/assets/7d221b55-0737-470e-9a16-f150bef42973)
+
+#### Connect
+**Without Connect**: User cannot connect to the Virtual Connection.
+
+**With Connect**: User can connect to the Virtual Connection.
+
+![Virtual Connection without Connect permission](https://github.com/user-attachments/assets/efdc2f97-4925-4f7a-b99f-da19aae33bfe)
+
+![Virtual Connection with Connect permission](https://github.com/user-attachments/assets/919c5173-7930-4fcc-b263-94ee3e9b669b)
+
+#### Overwrite
+
+Refer to Overwrite in Data Sources-level Permission
+
+#### Move
+
+Refer to Move in Data Sources-level Permission
+
+#### Delete
+
+Refer to Delete in Data Sources-level Permission
+
+#### Set Permission
+
+Refer to Set Permission in Data Sources-level Permission
+
+### FAQ
+
+Q: If we change the project-level permission, do the old and newly created files follow the project-level permission, or do we need to change these assets' permissions individually?
+
+A: Refer to Nested Asset Permissions. It is recommended to enable "Locked" (including nested projects) on your project-level permissions. 
+
+Once enabled, newly created files will automatically follow the project-level permission, ensuring a hassle-free process for permission changes. However, even after enabling, old files will still follow the old project-level permission, in that case, you might want to select multiple assets and change their permissions at once.
